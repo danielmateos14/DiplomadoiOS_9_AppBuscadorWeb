@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_AppBuscador" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa tu busqueda" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hn-RL-bHO">
+                                <rect key="frame" x="20" y="121.5" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscador" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woA-Zb-5Q1">
+                                <rect key="frame" x="20" y="40" width="280" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCQ-if-5Nj">
+                                <rect key="frame" x="20" y="245.5" width="280" height="31"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Buscar en webView">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-mK-VQ5">
+                                <rect key="frame" x="20" y="346.5" width="280" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Buscar en Safari Services"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIb-uF-Dnj">
+                                <rect key="frame" x="20" y="397.5" width="280" height="150.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QCQ-if-5Nj" secondAttribute="trailing" constant="20" id="46K-7d-571"/>
+                            <constraint firstItem="QCQ-if-5Nj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4sM-nZ-EuC"/>
+                            <constraint firstItem="t6x-mK-VQ5" firstAttribute="top" secondItem="QCQ-if-5Nj" secondAttribute="bottom" constant="70" id="8Hg-p3-TWZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="woA-Zb-5Q1" secondAttribute="trailing" constant="20" id="AP7-2z-WKW"/>
+                            <constraint firstItem="woA-Zb-5Q1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="HVB-Jn-z34"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LIb-uF-Dnj" secondAttribute="bottom" constant="20" id="Hlo-1d-BiD"/>
+                            <constraint firstItem="9Hn-RL-bHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JP1-Xw-pZA"/>
+                            <constraint firstItem="LIb-uF-Dnj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PjU-cp-KFH"/>
+                            <constraint firstItem="QCQ-if-5Nj" firstAttribute="top" secondItem="9Hn-RL-bHO" secondAttribute="bottom" constant="90" id="T72-c7-RDG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Hn-RL-bHO" secondAttribute="trailing" constant="20" id="UbC-lr-7bl"/>
+                            <constraint firstItem="9Hn-RL-bHO" firstAttribute="top" secondItem="woA-Zb-5Q1" secondAttribute="bottom" constant="50" id="YrF-8W-rWz"/>
+                            <constraint firstItem="woA-Zb-5Q1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b5P-es-qgX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LIb-uF-Dnj" secondAttribute="trailing" constant="20" id="oCA-li-sgB"/>
+                            <constraint firstItem="t6x-mK-VQ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pYG-3G-tty"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t6x-mK-VQ5" secondAttribute="trailing" constant="20" id="xuB-eG-BtS"/>
+                            <constraint firstItem="LIb-uF-Dnj" firstAttribute="top" secondItem="t6x-mK-VQ5" secondAttribute="bottom" constant="20" id="yJq-th-3dX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.25" y="68.661971830985919"/>
+        </scene>
+        <!--Web View View Controller-->
+        <scene sceneID="1by-29-tYy">
+            <objects>
+                <viewController id="RXs-Lr-9Rb" customClass="WebViewViewController" customModule="_AppBuscador" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OBe-Qn-Zjj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUS-es-7PT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ku2-Uk-LLe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cUS-es-7PT" firstAttribute="leading" secondItem="ku2-Uk-LLe" secondAttribute="leading" id="2ee-eD-5G1"/>
+                            <constraint firstItem="ku2-Uk-LLe" firstAttribute="bottom" secondItem="cUS-es-7PT" secondAttribute="bottom" id="70z-DE-f99"/>
+                            <constraint firstItem="cUS-es-7PT" firstAttribute="top" secondItem="ku2-Uk-LLe" secondAttribute="top" id="oJF-fM-ndG"/>
+                            <constraint firstItem="ku2-Uk-LLe" firstAttribute="trailing" secondItem="cUS-es-7PT" secondAttribute="trailing" id="pyE-u5-6WO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdv-lf-mR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="-106.69014084507042"/>
+        </scene>
+        <!--Safari Services View Controller-->
+        <scene sceneID="TUX-j8-JMb">
+            <objects>
+                <viewController id="CNc-eU-SIQ" customClass="SafariServicesViewController" customModule="_AppBuscador" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iNd-Mo-hj2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6n-Cn-Vwa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bfQ-GG-sew"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bfQ-GG-sew" firstAttribute="bottom" secondItem="W6n-Cn-Vwa" secondAttribute="bottom" id="2Uq-59-RoD"/>
+                            <constraint firstItem="W6n-Cn-Vwa" firstAttribute="top" secondItem="bfQ-GG-sew" secondAttribute="top" id="JWM-MF-Y7F"/>
+                            <constraint firstItem="W6n-Cn-Vwa" firstAttribute="leading" secondItem="bfQ-GG-sew" secondAttribute="leading" id="dZS-wf-iNi"/>
+                            <constraint firstItem="bfQ-GG-sew" firstAttribute="trailing" secondItem="W6n-Cn-Vwa" secondAttribute="trailing" id="yfk-j2-co1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bh7-gP-nMl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="580"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
