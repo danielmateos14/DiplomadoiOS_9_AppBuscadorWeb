@@ -29,3 +29,4 @@ class WebViewViewController: UIViewController {
         webViewBuscador.load(URLRequest(url: urlBuscar))
         }
     }
+
