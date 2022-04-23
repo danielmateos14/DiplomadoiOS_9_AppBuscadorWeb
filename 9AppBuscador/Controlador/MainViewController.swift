@@ -79,6 +79,24 @@ class MainViewController: UIViewController, UITextFieldDelegate {
             enviarDatos.recibirDatosWB = buscarStringWV
         }
     }
+    
+//    Funcion para cerrar el teclado al presionar el boton return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let nextTag = textField.tag + 1
+
+        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
+            nextResponder.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+
+        return true
+    }
+    
+    //    Funcion para cerrar el teclado al tocar fuera
+        override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            self.view.endEditing(true)
+        }
 }
 
 
